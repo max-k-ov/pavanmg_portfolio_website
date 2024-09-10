@@ -1,6 +1,15 @@
 .header {
   padding-top: 41px;
+
+  @media (width >= $tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding-top: 55px;
+  }
 }
 .header__wrapper {
   display: flex;
+  justify-content: space-between;
 }

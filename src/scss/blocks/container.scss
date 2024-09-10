@@ -1,8 +1,42 @@
 .container {
   width: 100%;
-  margin: 0 auto;
+
   position: relative;
-  padding: 0 219px 0 177px;
+  padding: 0 40px;
   background-color: #F5F5F5;
-  width: 1600px;
+  min-width: 320px;
+  max-width: 1600px;
+
+  @media (width >= $tablet-width) {
+    padding: 0 100px;
+    min-width: 768px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding: 0 177px;
+    min-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+.header__mobile-container {
+  width: 100%;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1440px;
+  position: relative;
+
+  @media (width >= $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    min-width: 768px;
+  }
+
+  @media (width >= $desktop-width) {
+    margin: 0 auto;
+    padding: 0 110px;
+    min-width: 1440px;
+  }
 }

@@ -25,8 +25,16 @@
 }
 
 .projects__grid {
-  display: grid;
-  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-  row-gap: 62px;
-  column-gap: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 320px;
+  gap: 20px;
+
+  @media (width >= $desktop-width) {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    row-gap: 62px;
+    column-gap: 45px;
+    max-width: none;
+  }
 }

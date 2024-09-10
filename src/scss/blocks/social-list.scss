@@ -5,8 +5,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 130px;
-  margin-left: 51px;
+  margin-top: 7px;
+
+  @media (width >= $tablet-width) {
+    margin-top: 0;
+    gap: 40px;
+    justify-content: right;
+  }
+
+  @media (width >= $desktop-width) {
+    width: 130px;
+    margin-left: 51px;
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 
 .social-list--footer {
@@ -19,18 +31,32 @@
   &::before {
     content: "";
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     margin: auto 0;
     background-color: #666666;
   }
 
-  &:hover::before {
-    opacity: 0.6;
+  @media (width >= $tablet-width) {
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
   }
+  
+  @media (width >= $desktop-width) {
+    &::before {
+      width: 30px;
+      height: 30px;
+    }
 
-  &:active::before {
-    opacity: 0.3;
+    &:hover::before {
+      opacity: 0.6;
+    }
+
+    &:active::before {
+      opacity: 0.3;
+    }
   }
 }
 
