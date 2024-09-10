@@ -16,7 +16,7 @@
     opacity: 0.3;
   }
 
-  @media (width >= $tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
     padding-bottom: 53px;
@@ -27,7 +27,7 @@
 .footer__logo {
   margin-left: 0;
 
-  @media (width >= $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-right: auto;
   }
 }
@@ -65,7 +65,7 @@
     opacity: 0.3;
   }
 
-  @media (width >= $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 33px;
   }
 }
@@ -88,7 +88,7 @@
     opacity: 0.3;
   }
 
-  @media (width >= $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 48px;
   }
 }

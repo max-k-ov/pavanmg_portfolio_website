@@ -30,7 +30,7 @@
   min-width: 320px;
   gap: 20px;
 
-  @media (width >= $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     row-gap: 62px;

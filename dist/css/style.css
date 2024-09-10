@@ -602,18 +602,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .main-navigation__menu-list {
-    display: flex !important;
-    position: static;
-  }
-
-  .social-list {
-    display: flex !important;
-    position: static;
-  }
-}
-
-@media (width >= 768px) {
   .header {
     padding-top: 25px;
   }
@@ -651,6 +639,16 @@ body {
 
   .main-navigation__toggle {
     display: none;
+  }
+
+  .main-navigation__menu-list {
+    display: flex !important;
+    position: static;
+  }
+
+  .social-list {
+    display: flex !important;
+    position: static;
   }
 
   .main-navigation--opened .main-navigation__menu-list {
@@ -718,7 +716,7 @@ body {
   }
 }
 
-@media (width >= 1600px) {
+@media (min-width: 1600px) {
   .header {
     padding-top: 55px;
   }

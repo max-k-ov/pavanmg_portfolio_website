@@ -5,14 +5,14 @@
   position: absolute;
   right: 120px;
 
-  @media (width >= $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: static;
     display: flex;
     flex-direction: column;
     margin-left: 70px;
   }
 
-  @media (width >= $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 8px;
     flex-direction: row;
     margin-left: 0;
@@ -30,11 +30,11 @@
   cursor: pointer;
   z-index: 2;
 
-  @media (width >= $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 
-  @media (width >= $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -96,7 +96,7 @@
 .main-navigation__menu-list {
   display: block;
 
-  @media (width >= $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     position: static;
   }
@@ -108,14 +108,14 @@
   list-style: none;
   min-width: 220px;
 
-  @media (width >= $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 405px;
   }
 
-  @media (width >= $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 609px;
   }
 }
@@ -127,7 +127,7 @@
   margin-bottom: 15px;
   text-align: right;
 
-  @media (width >= $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     border: none;
     margin-bottom: 0;
@@ -136,7 +136,7 @@
     text-align: center;
   }
 
-  @media (width >= $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
@@ -151,11 +151,11 @@
   padding: 0;
   color: #666666;
 
-  @media (width >= $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
   }
 
-  @media (width >= $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
 
     &:hover, 

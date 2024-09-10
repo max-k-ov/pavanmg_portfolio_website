@@ -7,13 +7,13 @@
   justify-content: space-between;
   margin-top: 7px;
 
-  @media (width >= $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 0;
     gap: 40px;
     justify-content: right;
   }
 
-  @media (width >= $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 130px;
     margin-left: 51px;
     gap: 0;
@@ -37,14 +37,14 @@
     background-color: #666666;
   }
 
-  @media (width >= $tablet-width) {
+  @media (min-width: $tablet-width) {
     &::before {
       width: 40px;
       height: 40px;
     }
   }
   
-  @media (width >= $desktop-width) {
+  @media (min-width: $desktop-width) {
     &::before {
       width: 30px;
       height: 30px;
