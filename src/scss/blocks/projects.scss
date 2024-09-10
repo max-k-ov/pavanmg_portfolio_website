@@ -1,0 +1,32 @@
+.projects {
+  padding-top: 206px;
+  padding-bottom: 203px;
+}
+
+.projects__title {
+  margin: 0;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #42446E;
+  margin-bottom: 49px;
+}
+
+.projects__description {
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #666666;
+  margin-bottom: 96px;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  row-gap: 62px;
+  column-gap: 45px;
+}

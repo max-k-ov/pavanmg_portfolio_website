@@ -1,0 +1,19 @@
+@import "fonts";
+
+@import "./common/variables";
+@import "./common/global.scss";
+@import "./common/mixins";
+@import "./common/visually-hidden.scss";
+
+@import "blocks/header.scss";
+@import "blocks/container.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/main-logo.scss";
+@import "blocks/social-list.scss";
+@import "blocks/intro.scss";
+@import "blocks/tech-stack.scss";
+@import "blocks/projects.scss";
+@import "blocks/project-card.scss";
+@import "blocks/footer.scss";
+
+
